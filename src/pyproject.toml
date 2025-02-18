@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Code-Runner"
+dependencies = ["setuptools"]
+version = "2025.02.18"
+
+[project.scripts]
+run = "code_runner:main"
