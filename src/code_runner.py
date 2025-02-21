@@ -66,7 +66,7 @@ def main():
                 break
         else:
             exec_args += ["-o", output_file]
-        subprocess.run(["g++", *FULL_FILENAMES, *exec_args], check=True)
+        subprocess.run(["g++", *FULL_FILENAMES, "-std=c++23", *exec_args], check=True)
 
         if not os.path.isabs(output_file):
             output_file = f"./{output_file}"
